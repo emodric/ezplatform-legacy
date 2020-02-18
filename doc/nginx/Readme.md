@@ -46,11 +46,11 @@ Example config:
         # and make sure to comment these out in "dev" environment.
         include ez_params.d/ez_prod_rewrite_params;
 
-        # Access to repository images in single server setup
-        include ez_params.d/ez_rewrite_params;
-
         # Legacy rewrite rules
         include ez_params.d/ez_legacy_rewrite_params;
+
+        # Access to repository images in single server setup
+        include ez_params.d/ez_rewrite_params;
 
         # upload max size
         client_max_body_size 48m;
